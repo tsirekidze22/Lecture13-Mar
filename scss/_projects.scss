@@ -4,15 +4,16 @@
   margin: auto;
   min-height: 350px;
   margin-top: 220px;
-  border: 2px solid salmon;
   text-align: center;
 
   .projects-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
     .project {
       width: 375px;
       height: 567px;
       border-radius: 20px;
-      border: 1px solid green;
       background-color: #fff;
       .img-wrapper {
         width: 100%;
