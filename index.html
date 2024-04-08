@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio Website | Welcome</title>
   </head>
   <body>
-    <header>
+    <header data-aos="fade-down">
       <a href="index.html">
         <img src="images/logo.svg" alt="logo" class="logo" />
       </a>
@@ -28,7 +29,7 @@
               <a href="#">Projects</a>
             </li>
             <li class="list-item">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -50,7 +51,7 @@
       <img src="images/burger-menu.svg" alt="menu icon" class="menu-icon" />
     </header>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <div class="text-wrapper">
         <h1>
           Hi 👋, <br />
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <section class="stack" id="stack">
+    <section class="stack" id="stack" data-aos="fade-up">
       <h2 class="section-title">My Tech Stack</h2>
       <p class="section-desc">Technologies I’ve been working with recently</p>
 
@@ -95,7 +96,7 @@
       </ul>
     </section>
 
-    <section class="projects container">
+    <section class="projects container" data-aos="fade-left">
       <h2 class="section-title">My Projects</h2>
       <p class="section-desc">Things I’ve built so far</p>
 
@@ -111,7 +112,7 @@
         </div>
       </div>
     </section>
-    <section class="projects container">
+    <section class="projects container" data-aos="fade-right">
       <h2 class="section-title">My Projects</h2>
       <p class="section-desc">Things I’ve built so far</p>
 
@@ -127,5 +128,13 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 500,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
